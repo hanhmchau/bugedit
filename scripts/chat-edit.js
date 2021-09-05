@@ -11,9 +11,8 @@ export default class ChatEdit {
 			},
 			callback: (header) => {
 				const chatData = game.messages.get(header.data("messageId"));
-				console.warn(header);
-				console.warn(header[0].outerHTML);
-				this.editChatMessage(chatData, header[0].outerHTML);
+				const element = $(header[0]).clone().removeClass('continued').addClass('leading');
+				this.editChatMessage(chatData, $(element)[0].outerHTML);
 				return {};
 			}
 		});
