@@ -1,0 +1,31 @@
+@import "variables";
+
+.dfce-editor {
+	textarea.content, .old-content {
+		margin-bottom: 10px !important;
+	}
+
+	textarea.content {
+		height: 200px;
+		max-height: 500px;
+	}
+
+	.old-content {
+		max-height: 100px;
+		overflow: auto;
+
+		#context-menu {
+			display: none;
+		}
+	}
+}
+
+#chat-log .message .content {
+	.df-edited {
+		color: $color-edit !important;
+		font-size: 9px;
+		user-select: none !important;
+		display: inline-block;
+		padding-left: 4px;
+	}
+}

@@ -8,7 +8,7 @@ const OnChangeFunctions = {
 };
 
 export class ModuleSettings {
-	static MODULE_NAME = "bugmacro";
+	static MODULE_NAME = "bugedit";
 
 	static registerSettings() {
 		game.settings.register(
